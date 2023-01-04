@@ -27,9 +27,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    - name: Test Maven
+    - name: Test maven
       run: mvn Test
-    - name: Build with Maven
+    - name: Build with maven
       run: mvn -B package --file pom.xml
     - name: Run build script
       run: ./make_html.sh
